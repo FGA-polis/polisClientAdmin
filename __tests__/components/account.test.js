@@ -2,10 +2,10 @@ import Account from '../../src/components/account';
 import React from 'react';
 import renderer from 'react-test-renderer';
 
-test('Link changes the class when hovered', () => {
+test('render method should return the correct content', () => {
 
   const component = renderer.create(
-    <Account user="{uid: 320682, email: 'djmgguedes@gmail.com', hname: 'dylan', hasFacebook: false, hasTwitter: false, hasTwitter: false, planCode: 0}" />
+    <Account user="{uid: 320682, email: 'test@gmail.com', hname: 'test', hasFacebook: false, hasTwitter: false, hasTwitter: false, planCode: 0}" />
   );
   
   let tree = component.toJSON();
